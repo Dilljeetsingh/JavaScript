@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Discount On trip</title>
+    </head>
+    <body>
+        <h1>Discount On Trip</h1>
+        <button onclick="
+        const age = 1;
+        if (age >= 1 && age <= 12){
+        console.log('80% discount')
+        message = '90% discount for 1 to 12 year old'}
+        document.getElementById('discountMessage').innerText = message;
+        ">
+        age 1 to 12</button>
+
+        <button onclick="
+        const age = 13;
+        if(age >=13 && age <= 18){
+        console.log('40% discount')
+        message = '40% discount for 13 to 18 year old'}
+        document.getElementById('discountMessage').innerText = message;
+        ">age 12 to 18</button>
+
+        <button  onclick="
+        const age = 19;
+        if(age >=19 && age <= 30){
+        console.log('20% discount')
+        message = '20% discount for 19 to 30 year old'}
+        document.getElementById('discountMessage').innerText = message;
+        ">age 19 to 30</button>
+
+        <button  onclick="
+        const age = 31
+        if(age >=31 && age <= 50){
+        console.log('30% discount')
+        message = '30% discount for 31 to 50 year old'}
+        document.getElementById('discountMessage').innerText = message;
+        ">age 31 to 50</button>
+
+        <button  onclick="
+        const age = 51
+        if(age >=51 && age <= 100){
+        console.log('50% discount')
+        message = '50% discount for 51 to above year old'}
+        document.getElementById('discountMessage').innerText = message;
+        ">age 51 or above</button>
+
+        <div id="discountMessage" style="margin-top: 20px; font-size: 20px; font-weight: bold;"></div>
+   
+    </body>
+</html>
