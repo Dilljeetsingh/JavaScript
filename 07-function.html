@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+    </head>
+    <body>
+        <!--- what is function?: A function lets us reuse code ---> 
+        <script>
+            /*
+            function function1(){
+                console.log('hello');
+                console.log(2+2);
+            }
+
+            function1();
+            */
+           // return = gets a value out of a function
+           // parameter = put a value INTO a function
+
+           function calculateTax(cost, taxPercent = 0.1){
+                console.log(cost * taxPercent);
+           }
+
+           calculateTax(2000, 0.2); // passing a value into the function
+           calculateTax(5000); // another name is value
+
+        </script>
+    </body>
+</html>
