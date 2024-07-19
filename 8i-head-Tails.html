@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Heads and Tails</title>
+    </head>
+    <body>
+        <h1>Heads And Tails</h1>
+        <button 
+        onclick="       
+        playerMove('head')">Heads</button>
+        <button onclick="playerMove('tails')">Tails</button>
+    <script>
+        function playerMove(playerMove){
+            const computerMove = pickcomputerMove();
+
+            let result='';
+
+            if (playerMove === 'head'){
+                if (computerMove === 'head'){
+                 result = 'you lose'
+                }else if (computerMove === 'tails'){
+                    result = 'you won'
+                }
+            }else if (playerMove === 'tails'){
+                if (computerMove === 'tails'){
+                    result = 'you lose'
+                }else if (computerMove === 'head'){
+                    result = 'you win'
+                }
+            }
+            alert(`you pick ${playerMove} and computer pick ${computerMove} and ${result}`);
+        };
+
+        function pickcomputerMove(){
+            const randomnumber = Math.random();
+            let computerMove =''
+
+            if (randomnumber > 0.5 && randomnumber < 1){
+                computerMove = 'head'
+            }else if (randomnumber < 0.5 && randomnumber > 0 ){
+                computerMove = 'tails'
+            }
+            return computerMove;
+        }
+
+        
+    </script>
+    
+    </body>
+</html>
